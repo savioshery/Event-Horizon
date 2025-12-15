@@ -2,7 +2,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { AISuggestionResponse, EventType } from "../types";
 
 // Initialize the API client
-// Note: In a real app, ensure process.env.API_KEY is defined in your build environment.
+// Note: In a real app, ensure process.env.API_KEY || 'FAKE_API_KEY_FOR_DEVELOPMENT' is defined in your build environment.
 const apiKey = process.env.API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 
